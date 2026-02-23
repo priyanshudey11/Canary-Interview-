@@ -119,27 +119,6 @@ dotnet test
 
 Expected: `Passed! - Failed: 0, Passed: 3, Skipped: 0, Total: 3`
 
-Tests verify:
-1. Basic publish/subscribe delivery
-2. Multiple subscribers all receive messages
-3. Unsubscribe stops receiving + PublishAsync doesn't throw
-
-## Interview Talking Points
-
-**Q: Why Channels?**
-Built-in async/await support, clean `ReadAllAsync` pattern, unbounded mode prevents blocking.
-
-**Q: Why unbounded channels?**
-Non-blocking publish requirement. Slow subscribers queue grows, but publisher never waits. Production would add monitoring.
-
-**Q: What happens on unsubscribe?**
-Channel completes, background task drains all queued messages, then exits. Demo proves this with exact message counts.
-
-**Q: Thread safety?**
-`ConcurrentDictionary` for tag→subscribers, `ConcurrentBag` for subscriber lists. Lock-free operations, safe for concurrent access.
-
-**Q: Performance optimizations?**
-`ValueTask` + `TryWrite` fast-path avoids allocations. Only allocate `List<Task>` when channels are full (rare).
 
 
 
