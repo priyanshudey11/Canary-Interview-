@@ -1,0 +1,54 @@
+# .NET Build Outputs
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio cache/options
+.vs/
+.vscode/
+*.rsuser
+.claude/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+.nuget/
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Mac/Linux files
+.DS_Store
+*~
+._*
+
+# Ignore all markdown files except README.md
+*.md
+!README.md
