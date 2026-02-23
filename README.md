@@ -118,10 +118,3 @@ dotnet test
 ```
 
 Expected: `Passed! - Failed: 0, Passed: 3, Skipped: 0, Total: 3`
-
-
-
-
-
-
-# Canary-Interview-
