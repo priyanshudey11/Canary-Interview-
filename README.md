@@ -8,7 +8,7 @@
 brew install dotnet@8
 
 # Clone and run
-git clone <your-repo-url>
+git clone https://github.com/priyanshudey11/Canary-Interview-.git
 cd TagBroker
 
 # Run tests 
