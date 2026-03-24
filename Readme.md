@@ -1,7 +1,3 @@
-# Python Coding Challenges
-
-Four Python challenges focused on different design patterns and software engineering concepts.
-
 ## Challenge 1: Task Tracker
 
 A command-line to-do app with persistent storage.
